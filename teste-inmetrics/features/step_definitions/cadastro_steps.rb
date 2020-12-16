@@ -1,5 +1,5 @@
 Dado("que acesso a página de Cadastro") do
-  visit "http://www.inmrobo.tk/accounts/login/"
+  visit "/"
   botao_cadastrar.click
 end
 
