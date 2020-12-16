@@ -1,11 +1,13 @@
 # Plataform
-default: -p html_report -p json_report -p chrome
+default: -p html_report -p json_report -p chrome -p bdd
 api_log: -p http_log -p api
 
 html_report: --format html --out=report/logs/report.html
 
+bdd: --format pretty
+
 # Reports
-json_report: --format pretty --format json --out=report/rubocop.html.json
+json_report: --format=message --out=report/rubocop.html.json
 
 # Logs
 http_log: HTTP_LOG=true
