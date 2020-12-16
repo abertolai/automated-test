@@ -25,7 +25,7 @@ Funcionalidade: Cadastro de Usuários
                   | confirma_senha | teste321       |
              Então deve apresentar a mensagem: "Senhas não combinam"
 
-        Cenário: Tentativa de Cadastro
+        Esquema do Cenário: Tentativa de Cadastro
             Dado que acesso a página de Cadastro
              Quando submeto o meu cadastro com:
                   | usuario        | <usuario>        |
