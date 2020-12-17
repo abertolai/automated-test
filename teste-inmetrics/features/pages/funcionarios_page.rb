@@ -3,8 +3,16 @@ module FuncionariosPageObjects
     "#tabela_wrapper"
   end
 
+  def tab_funcionarios
+    "table#tabela tr"
+  end
+
   def link_novo_funcionario
     find(:xpath, "//a[@href='/empregados/new_empregado']")
+  end
+
+  def label_pesquisa_func
+    find("[type='search'")
   end
 
   #textos
@@ -46,6 +54,14 @@ module FuncionariosPageObjects
   #botões
   def btn_submit
     find("input[type=submit")
+  end
+
+  def btn_editar_func
+    first("a[href*='/empregados/edit/']")
+  end
+
+  def btn_excluir
+    find("#delete-btn")
   end
 
   #alerts

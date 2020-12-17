@@ -7,7 +7,7 @@ Dado("que acesso o cadastro de funcionario") do
   link_novo_funcionario.click
 end
 
-Quando("submeto o cadastro do funcionario com:") do |table|
+Quando("submeto os dados do funcionario com:") do |table|
   func = table.rows_hash
 
   #nome
