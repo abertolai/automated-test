@@ -6,7 +6,7 @@ Funcionalidade: Cadastro de Funcionario
 
         Cenário: Cadastro de funcionário com sucesso
             Dado que acesso o cadastro de funcionario
-             Quando submeto o cadastro do funcionario com:
+             Quando submeto os dados do funcionario com:
                   | nome             | Teste Funcionário 2 |
                   | cpf              | 444.874.830-85      |
                   | sexo             | Feminino            |
